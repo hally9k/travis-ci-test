@@ -22,7 +22,7 @@ module.exports = {
 
   test_settings: {
     default: {
-      launch_url: 'http://localhost:8080',
+      launch_url: 'http://ondemand.saucelabs.com:80',
       selenium_port: 80,
       selenium_host: 'ondemand.saucelabs.com',
       silent: true,
@@ -37,6 +37,8 @@ module.exports = {
       },
       desiredCapabilities: {
         browserName: 'chrome',
+        build: `build-${process.env.TRAVIS_JOB_NUMBER}`,
+        'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
         chromeOptions: {
           // "args" : ["headless", "no-sandbox", "disable-gpu"] //Enabling  this will start chrome in headless mode
         },
