@@ -6,6 +6,7 @@ node_js:
 
 before_script:
     - node index.js &
+    - sleep 10
 
 script:
   - curl http://localhost:8080
