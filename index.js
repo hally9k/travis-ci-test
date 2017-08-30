@@ -2,7 +2,15 @@ var koa = require('koa')
 var app = new koa()
 
 app.use(function*() {
-  this.body = 'Hello woooorld!'
+  this.body = `
+    <html>
+      <head>
+      </head>
+      <body>
+        <div class="hello">Hello woooorld!</div>
+      </body>
+    <html>
+    `
 })
 
 app.listen(8080, function() {
