@@ -5,6 +5,6 @@ app.use(function*() {
   this.body = 'Hello woooorld!'
 })
 
-app.listen(4567, function() {
-  console.log('Server running on http://localhost:4567')
+app.listen(8080, function() {
+  console.log('Server running on http://localhost:8080')
 })
