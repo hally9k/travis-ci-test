@@ -6,6 +6,7 @@ node_js:
 
 before_script:
     - node index.js &
-  
+
 script:
-  - curl http://localhost:4567
+  - curl http://localhost:8080
+  - curl http://127.0.0.1:8080
