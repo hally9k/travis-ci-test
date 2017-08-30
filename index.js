@@ -2,7 +2,7 @@ var koa = require('koa')
 var app = new koa()
 
 app.use(function*() {
-  this.body = 'Hello world!'
+  this.body = 'Hello woooorld!'
 })
 
 app.listen(4567, function() {
