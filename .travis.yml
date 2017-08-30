@@ -13,3 +13,4 @@ before_script:
 
 script:
   - curl http://localhost:8080
+  - npm run e2e
